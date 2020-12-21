@@ -14,6 +14,8 @@ class Captcha {
   public function checkCode($code) {
     return ($code == $_SESSION['captcha_code']) ? true : false;
   }
+  
+  
 
   public function generate() {    
     $width = $this->img_width; 
