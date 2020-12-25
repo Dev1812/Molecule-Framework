@@ -63,7 +63,7 @@ class Captcha {
  
     for($i=0;$i<3;$i++) {
       $line_color = imagecolorallocate($src, rand(120,255), rand(120,255), rand(120,255));
-      imageline($src,0,rand()%50,200,rand()%50,$line_color);
+      imageline($src, 0,rand()%50,200,rand()%50,$line_color);
     }
 
     for($i=0;$i < $this->fon_let_amount;$i++){//добавляем на фон буковки
